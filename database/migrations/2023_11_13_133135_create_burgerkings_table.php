@@ -13,14 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('students', function (Blueprint $table) {
+        Schema::create('burgerkings', function (Blueprint $table) {
             $table->id();
-            $table->integer('id')->unique();
-            $table->string('nama_produk');
-            $table->string('jenis_produk');
-            $table->string('alamat');
+            $table->string('nama');
+            $table->date('jenis');
             $table->string('harga');
-            $table->text('Action');
             $table->timestamps();
         });
     }
@@ -32,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('siswa');
+        Schema::dropIfExists('burgerkings');
     }
 };
