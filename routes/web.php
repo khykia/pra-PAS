@@ -1,13 +1,9 @@
 <?php
 
 use App\Http\Controllers\BurgerkingController;
+use App\Http\Controllers\HolyteaController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProdukController;
-use App\Models\Produk;
-use App\Http\Controllers\WardahController;
 use App\Http\Controllers\WingstoppController;
-use App\Models\Wardah;
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -30,3 +26,6 @@ Route::get('/products/detailwingstop/{product}',[wingstoppController::class, 'sh
 
 Route::get('/burgerkings/burgerking', [BurgerkingController::class, 'index']);
 Route::get('/burgerkings/detailburger/{burgerking}',[BurgerkingController::class, 'show']);
+
+Route::get('/holytea/holytea', [HolyteaController::class, 'index']);
+Route::get('/holytea/detailholytea/{holytea}',[HolyteaController::class, 'show']);

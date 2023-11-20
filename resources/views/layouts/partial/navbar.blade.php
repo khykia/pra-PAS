@@ -18,6 +18,7 @@
               <a class="nav-link active" aria-current="page" href="/home">Home</a>
               <a class="nav-link" href="/products/wingstop">Wingstop</a>
               <a class="nav-link" href="/burgerkings/burgerking">Burgerking</a>
+              <a class="nav-link" href="holytea/holytea">Holytea</a>
               <a class="nav-link" href="/about">About</a>
             </div>
           </div>
