@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-<a href="/products/wingstop">back</a>
+<a href="/wingstop">back</a>
 
 <table class="table">
     <tr>

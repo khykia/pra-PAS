@@ -20,12 +20,12 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/products/wingstop', [wingstoppController::class, 'index']);
-Route::get('/products/detailwingstop/{product}',[wingstoppController::class, 'show']);
+Route::get('/wingstop', [wingstoppController::class, 'index']);
+Route::get('/detailwingstop/{product}',[wingstoppController::class, 'show']);
 
 
-Route::get('/burgerkings/burgerking', [BurgerkingController::class, 'index']);
-Route::get('/burgerkings/detailburger/{burgerking}',[BurgerkingController::class, 'show']);
+Route::get('/burgerking', [BurgerkingController::class, 'index']);
+Route::get('/detailburger/{burgerking}',[BurgerkingController::class, 'show']);
 
-Route::get('/holytea/holytea', [HolyteaController::class, 'index']);
-Route::get('/holytea/detailholytea/{holytea}',[HolyteaController::class, 'show']);
+Route::get('/holytea', [HolyteaController::class, 'index']);
+Route::get('/detailholytea/{holytea}',[HolyteaController::class, 'show']);

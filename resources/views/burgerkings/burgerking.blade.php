@@ -20,7 +20,7 @@
         <td>{{ $datas->jenis }}</td>
         <td>{{ $datas->harga }}</td>
         <td>
-          <a type="button" class="btn btn-primary" href="/products/detailwingstop/{{$datas->id}}">Detail</a>
+          <a type="button" class="btn btn-primary" href="/detailburger/{{$datas->id}}">Detail</a>
         </td>
       </tr>
       @endforeach
